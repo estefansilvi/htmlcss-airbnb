@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.testata{
+  width: 100vw;
+  height:10vh;
+  text-align: center;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: white;
+  box-shadow: 4px 2px 5px #000000;
+  z-index: 1;
+}
+
+h1{
+  margin:10px;
+}
+.container{
+  width: 70vw;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+.row{
+  width: 98%;
+  height: 70vh;
+  background-color: #FF0000;
+  box-shadow: 4px 4px 5px #000000;
+  margin:10px auto;
+  position: relative;
+}
+
+.row.copenaghen{
+  background: url("img/copenaghen.jpg");
+  background-size: cover;
+}
+
+.row.barcellona{
+  background: url("img/barcellona.jpg");
+  background-size:cover;
+}
+
+.row.parigi{
+  background: url("img/parigi.jpg");
+  background-size: cover;
+}
+
+.city{
+  color: #ffffff;
+  font-size: 50px;
+  text-shadow: 4px 2px 5px #FF7F50;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.row:hover .city{
+  display: block;
+}
